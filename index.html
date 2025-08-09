@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../p4/main.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="icon.gif">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <title>r u happy?</title>
+</head>
+  
+<body onload="setInterval(step,50)">
+<div id="layout">
+<!--MAIN WINDOW-->
+<div class="window active" style="width:900px;height:600px;">
+<div class="title-bar">
+<div class="title-bar-text">Install Happiness?</div>
+<div class="title-bar-controls">
+  <button aria-label="Minimize"></button>
+  <button aria-label="Maximize"></button>
+  <button aria-label="Close"></button>
+</div>
+</div>
+<div class="window-body has-space" style="height:550px;">
+<!--SIDE BAR-->
+<div class="leftbar">
+  <ul class="tree-view has-collapse-button has-connector has-container" style="background:#f0f0f0;border-style:none;font-size:13px;">
+<details open>
+  <summary>Happiness ...</summary>
+  <ul>
+    <li>Under Construction</li>
+    <li>
+      <details>
+        <summary><b>What Makes Me Happy</b></summary>
+        <ul>
+		  <li><a href="movies/movies.html">movies</a></li>
+          <li><a href="music/music.html">music</a></li>
+          <li><a href="books/books.html">books</a></li>
+          <li><a href="clothes/clothes.html">clothes</a></li>
+          <li><a href="art/art.html">art</a></li>
+          <li><a href="video games/video games.html">video games</a></li>
+        </ul>
+      </details>
+    </li>
+    <li><a href="index.html">Homepage</a></li>
+  </ul>
+</details>
+</ul>
+</div>
+<!--MAINPAGE-->
+<div class="rightbar">
+  <div class="topbar">
+  &nbsp;&nbsp;<h style="color:#4c8c5a;font-size:50px;">Downloads</h>
+  <br>&nbsp;&nbsp;&nbsp;Click on any file to download happiness..
+  </div>
+<!--PHOTO LINKS-->
+	
+<div class="bottom">
+<div class="bottom_grid">
+  <div class="item">
+    <a href="movies/movies.html"><img src="images/bg_main.png" alt="movies"></a>
+    <div class="label">movies</div>
+  </div>
+  <div class="item">
+    <a href="music/music.html"><img src="images/bg_main.png" alt="music"></a>
+    <div class="label">music</div>
+  </div>
+  <div class="item">
+    <a href="books/books.html"><img src="images/bg_main.png" alt="book"></a>
+    <div class="label">book</div>
+  </div>
+  <div class="item">
+    <a href="clothes/clothes.html"><img src="images/bg_main.png" alt="clothes"></a>
+    <div class="label">clothes</div>
+  </div>
+  <div class="item">
+    <a href="art/art.html"><img src="images/bg_main.png" alt="art"></a>
+    <div class="label">art</div>
+  </div>
+  <div class="item">
+    <a href="video games/video games.html"><img src="images/bg_main.png" alt="video games"></a>
+    <div class="label">video games</div>
+  </div>
+</div>
+</div>
+<!--<div class="bottom">
+  <a href="strife.html"><img src="images/bg_main.png" style="height:80px;margin:10px;filter: drop-shadow(2px 2px 2px gray);"></a>
+  <a href="not-found"><img src="images/bg_main.png" style="height:80px;margin:10px;filter: drop-shadow(2px 2px 2px gray);"></a>
+  <a href="cloud.html"><img src="images/bg_main.png" style="height:80px;margin:10px;filter: drop-shadow(2px 2px 2px gray);"></a>
+  <a href="cloud.html"><img src="images/bg_main.png" style="height:80px;margin:10px;filter: drop-shadow(2px 2px 2px gray);"></a>
+  <br>
+  <a href="movies/movies.html" style="height:80px;margin-top:-8px;margin:37px;color:black;">movies</a>
+  <a href="music/music.html" style="height:80px;margin-top:-8px;margin:30px;color:black;">music</a>
+  <a href="books/books.html" style="height:80px;margin-top:-8px;margin:40px;color:black;">books</a>
+  <a href="clothes/clothes.html" style="height:80px;margin-top:-8px;margin:35px;color:black;">clothes</a>
+
+  <a href="cloud.html"><img src="images/bg_main.png" style="height:80px;margin:10px;filter: drop-shadow(2px 2px 2px gray);"></a>
+  <a href="cloud.html"><img src="images/bg_main.png" style="height:80px;margin:10px;filter: drop-shadow(2px 2px 2px gray);"></a>
+  <a href="cloud.html"><img src="images/bg_main.png" style="height:80px;margin:10px;filter: drop-shadow(2px 2px 2px gray);"></a>
+  <a href="cloud.html"><img src="images/bg_main.png" style="height:80px;margin:10px;filter: drop-shadow(2px 2px 2px gray);"></a>
+  <br>
+  <a href="art/art.html" style="height:80px;margin-top:-8px;margin:45px;color:black;">art</a>
+  <a href="video games/video games.html" style="height:80px;margin-top:-8px;margin:45px;color:black;">video games</a>
+</div>-->
+</div>
+</div>
+</div>
+</div>
+
+<span class="spinner" aria-label="Spinning"></span>
+<span class="loader" aria-label="Loading"></span>
+<span class="loader animate" id="custom-cursor" aria-label="Processing your request"></span>
+	
+<script>
+  const cursor = document.getElementById('custom-cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.top = e.clientY + 'px';
+    cursor.style.left = e.clientX + 'px';
+  });
+</script>
+	
+<script>
+    function closeDiv(divNumber) {
+    document.getElementById("div" + divNumber).style.display="none";}
+ </script>
+<!-- SCM Music Player https://www.scmplayer.net -->
+<!--<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
+data-config="{'skin':'skins/cyber/skin.css','volume':50,'autoplay':false,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'PSI-Desu I LIKE YOU','url':'https://files.catbox.moe/zka0bi.mp3'},{'title':'Ai LIKE Hamburger','url':'https://files.catbox.moe/ewrno6.mp3'},{'title':'Catallena - Orange Caramel','url':'https://files.catbox.moe/033z3k.mp3'},{'title':'Gigantic OTN','url':'https://files.catbox.moe/5fk9vh.mp3'},{'title':'Au Revoir - Malice Mizer','url':'https://files.catbox.moe/eioy3e.mp3'},{'title':'FFVII REMAKE: %u95D8%u3046%u8005%u9054 -%u306A%u3093%u3067%u3082%u5C4B%u306E%u4ED5%u4E8B-','url':'https://files.catbox.moe/xm0mty.mp3'},{'title':'Milky Starry Charm - Ra*bits','url':'https://files.catbox.moe/6zavpv.mp3'},{'title':'ChuChu Lovely MuniMuni MuraMura PrinPrin Boron Nururu ReroRero','url':'https://files.catbox.moe/wmwpqf.mp3'},{'title':'Little Twin Stars Theme','url':'https://files.catbox.moe/mw4sfb.mp3'},{'title':'CaramellDansen','url':'https://files.catbox.moe/wavyj8.mp3'}]}" ></script>-->
+<!-- SCM Music Player script end -->
+</body>
+</html>

@@ -1,0 +1,153 @@
+@charset "UTF-8"
+/*CSS Document*/
+	
+@font-face {
+font-family: 'nintendo';
+src: url(https://dl.dropbox.com/s/8w4sembeqyz4rsq/Nintendo-DS-BIOS.ttf); }
+font {
+font-family: 'nintendo';
+}
+
+@font-face {
+src: url(https://dl.dropbox.com/s/uougf9v63jmphoj/Jojoba.otf);
+font-family: "jojoba";
+} 
+font {
+font-family: "jojoba";
+}
+
+@font-face{
+font-family: "kamikaze";
+src:url(https://dl.dropbox.com/s/m2zgnc9nwuyjsfb/Kamikaze-3D-Gradient-Regular.woff);}
+font {
+font-family: "kamikaze";
+}
+
+@font-face {
+src: url(https://dl.dropbox.com/s/sp80a2vopsaa164/SnackerComic_PerosnalUseOnly.ttf);
+font-family: "snacker";
+}
+font {
+font-family: "snacker";
+}
+	
+* {
+	margin:0;
+	padding: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100vh;
+	width: 100vw;
+	margin: auto; 
+	cursor: none;
+}
+
+body{
+background-image:url("../p4/images/bg_main.png");
+background-size: cover;
+font-family:;
+text-decoration:none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 80vh; 
+}
+
+#custom-cursor {
+position: fixed;
+pointer-events: none;
+z-index: 9999;
+top: 0;
+left: 0;
+transform: translate(-50%, -50%);
+}
+
+#layout {
+width:950px;
+height:500px;
+margin-left:auto;
+margin-right:auto;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+margin:0; 
+filter: drop-shadow(2px 2px 2px gray);
+}
+
+.leftbar {
+width:200px;
+height:100%;
+border-right:2px;
+border-right-style:solid;
+border-right-color:#dee6f1; 
+border-radius:px;
+background:#f0f0f0;
+float:left;
+margin-right:10px;
+}
+
+.rightbar {
+width:auto;
+height:400px;
+border-left:0px;
+border-left-style:solid;
+border-left-color:#dee6f1; 
+border-radius:px;
+background:#f0f0f0;
+}
+
+.topbar {
+width:auto;
+height:85px;
+border-bottom:2px;
+border-bottom-style:solid;
+border-bottom-color:#dee6f1; 
+border-radius:px;
+background:#f0f0f0;
+color:#a0abc6;
+font-size:13px;
+margin-bottom:10px;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.bottom_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+}
+
+.item img {
+  height: 80px;
+  filter: drop-shadow(2px 2px 2px gray);
+  margin-bottom: 8px;
+}
+
+.label {
+  font-size: 14px;
+  color: black;
+}
